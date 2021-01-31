@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAnimalActivity">
+
+<!--        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/vet"
+        app:c_border="true"
+        app:c_border_color="@color/colorGray"
+        app:c_border_width="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/editAnimalNameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485"
+        tools:layout_editor_absoluteX="135dp"
+        tools:ignore="MissingConstraints" />-->
+
+        <ImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="184dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/editAnimalNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641"
+        app:srcCompat="@drawable/ic_camera_black" />
+
+    <EditText
+        android:id="@+id/editAnimalNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="367dp"
+        android:ems="10"
+        android:hint="Animal Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editAnimalTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Type"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalNameText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalNameText" />
+
+    <CheckBox
+        android:id="@+id/vaccineCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalOwnerNumberText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editAnimalOwnerNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Owner Number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalAgeText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalAgeText" />
+
+    <EditText
+        android:id="@+id/editAnimalAgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Age"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalTypeText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalTypeText" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="184dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editAnimalNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641"
+        app:srcCompat="@drawable/vet" />
+
+    <EditText
+        android:id="@+id/editAnimalNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="367dp"
+        android:ems="10"
+        android:hint="Animal Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editAnimalTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Type"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalNameText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalNameText" />
+
+    <CheckBox
+        android:id="@+id/vaccineCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalOwnerNumberText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editAnimalOwnerNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Owner Number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalAgeText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalAgeText" />
+
+    <EditText
+        android:id="@+id/editAnimalAgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Animal Age"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editAnimalTypeText"
+        app:layout_constraintTop_toBottomOf="@+id/editAnimalTypeText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
